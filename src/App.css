@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #FFC107;
+  margin-right: 8px;
+}
+
+.nav-links {
+  color: #777;
+  font-size: 14px;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+ /* Responsive Layout */
+@media (max-width: 480px) {
+  .card-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+.reset-button {
+  background-color: #FF5252;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.reset-button:hover {
+  background-color: #FF7070;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reset-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+ /* Responsive Layout */
+@media (max-width: 480px) {
+  .reset-button {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+ /* Responsive Layout */
+@media (max-width: 600px) {
+  .card-container {
+    padding: 20px;
+  }
+}

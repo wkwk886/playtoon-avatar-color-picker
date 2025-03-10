@@ -1,0 +1,22 @@
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #555555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 480px) {
+    .avatar {
+      width: 100px;
+      height: 100px;
+      font-size: 14px;
+    }
+  }

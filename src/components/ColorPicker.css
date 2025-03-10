@@ -1,0 +1,45 @@
+.color-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .color-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+    margin: 5px;
+  }
+  
+  .color-button:hover {
+    transform: scale(1.2);
+    border-color: white;
+  }
+  
+  .color-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* process edge */
+  .color-button[style*="background-color: #FFFFFF"] {
+    border: 2px solid #ddd;
+  }
+  
+/* Responsive Layout */
+  @media (max-width: 480px) {
+    .color-buttons {
+      max-width: 240px;
+    }
+    
+    .color-button {
+      width: 25px;
+      height: 25px;
+    }
+  }
